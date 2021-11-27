@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <!-- Link to css file --> 
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header with high scores and timer --> 
+        <header>
+            <div>
+                <h1><a href="#" onclick="viewHighScores()">View High Scores</a></h1>
+            </div>
+
+            <div class="timer">
+                <span id="timer">Time: 00:00</span>
+            </div>
+        </header>
+             <!-- Quiz questions header --> 
+                <div class="card">
+                    <div class="card-header">
+                    <h2 class="question">Questions Comes Here</h2>
+                    <h2 id="yay">Yay we did it!</h2>
+                 </div>
+            <!-- Button id's for choices --> 
+                <div class="card-body">                    
+                   <ul class="answerSection">
+                       <li><button type="button" class="btn" id="choice1"></button></li>
+                       <li><button type="button" class="btn" id="choice2"></button></li>
+                       <li><button type="button" class="btn" id="choice3"></button></li>
+                       <li><button type="button" class="btn" id="choice4"></button></li>
+                   </ul>   
+                   <div class="card-header">
+                        <div id="userAnswer" class="userAns"></div> 
+                    </div>          
+                </div>
+            <!-- final scores, high scores and alldone page --> 
+                    <h2 id="alldone"></h2>
+                    <h2 id="finalScore"></h2>
+                    <h2 id="btnHighScore"></h2>
+            <!-- Button for scores and Initials capturing --> 
+                <div class="divEi">
+                        <input name="nameInput" placeholder="Enter Initials" id="nameInput" class="inputBox"> 
+                        <button class="btn btnSub" id="btn" type="submit">Submit</button>  
+
+                        <button class="btn btnSub" id="goBack" type="button" onclick="startQuiz()">Go Back</button>  
+                        <button class="btn btnSub" id="clearHighScores" type="button">Clear High Scores</button>  
+                </div>
+
+ <!-- Added link to the jQuery library -->
+ <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  -->
+
+<!-- Link for js files -->    
+<script src="assets/js/quiz.js"></script>
+<script src="assets/js/timer.js"></script>
+</body>
+</html>

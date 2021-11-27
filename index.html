@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Coding Quiz Challenge</title>
-    <!-- style.css -->
+    <!-- Link to css file --> 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body> 
     <div class="wrapper">
+        <!-- Header with high scores and timer -->  
         <header>
             <div>
-                <h1>View High Scores</h1>
+                <h1><a href="#" onclick="viewHighScores()">View High Scores</a></h1>
             </div>
 
             <div class="timer">
                 <span id="timer">Time: 00:00</span>
             </div>
         </header>
+             <!-- Container for Start Quiz --> 
                  <div class="card">
                     <div class="card-header">
                     <h2>Coding Quiz Challenge</h2>
@@ -27,6 +29,7 @@
                     <p>Try to answer the following code-related questions within the time limit.
                         Keep in mind that incorrect answers will penalize your scre/time by
                         ten seconds!</p>
+               <!-- Button to go to quiz.html page -->  
                 </div>
                     <div class="card-footer">
                         <button type="submit" class="btn" onclick="generateQuestions()">Start Quiz</button>
@@ -35,7 +38,7 @@
     </div>
 
  
-<!-- js file -->    
+<!-- Link to js file -->    
 <script src="assets/js/script.js"></script>
 </body>
 </html>
