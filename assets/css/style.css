@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --third-color: #39a6b2;
+    --fourth-color: #ff18f3;
+  }
+
+  
+/* Universal Selector */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    color: var(--third-color);
+    font-family: play;
+  }
+
+/* header starts */
+  header {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+    color: var(--third-color);  
+    padding-left: 30px;
+  }
+
+  header div h1 a {
+    text-decoration: none;
+    color: var(--fourth-color);
+  }
+  
+/* timer class */
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 0 30px;
+  }
+
+  
+  header h1 {
+    text-align: left;
+    color: var(--fourth-color);
+  } 
+/* Header ends here */
+
+.wrapper {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff; */
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+/* card class */
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    font-size: 22px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 40px;
+  }
+
+  div h2 {
+    text-align: center;
+    color: var(--third-color);
+  } 
+
+.card-header::after {
+    text-align: center;
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+  }
+
+  .card-body {
+    min-height: 100px;
+  }
+  
+  /* footer class starts */
+  .card-footer {
+    text-align: center;
+  }
+  
+  .card-footer::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+  }
+  
+  .card-footer::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* footer class ends */
+  
+  /* button class */
+  .btn {
+    border: none;
+    background-color: hsl(360, 91%, 36%);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+      0px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  button[disabled] {
+    cursor: default;
+    background: #c0c7cf;
+  }
+  
+  
+  
